@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy · FitBoss</title><meta name="description" content="FitBoss privacy policy: your data stays on your device.">
+<meta name="theme-color" content="#07110d"><link rel="icon" href="favicon.png">
+<meta property="og:title" content="Privacy policy · FitBoss"><meta property="og:description" content="FitBoss privacy policy: your data stays on your device."><meta property="og:image" content="boss.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#07110d;--bg2:#0b1a14;--panel:#0f241b;--linea:#24493a;--fg:#e9efe9;--mut:#a3b5aa;--oro:#e0ac48;--oro2:#f3cd7a;--rojo:#ff5a3c;color-scheme:dark}
+:root[data-tema="claro"]{--bg:#f4efe2;--bg2:#ebe4d2;--panel:#fffaf0;--linea:#cdbf9c;--fg:#17261f;--mut:#566559;--oro:#a8741a;--oro2:#8a5c0e;--rojo:#c23b22;color-scheme:light}
+@media (prefers-color-scheme:light){:root:not([data-tema="oscuro"]){--bg:#f4efe2;--bg2:#ebe4d2;--panel:#fffaf0;--linea:#cdbf9c;--fg:#17261f;--mut:#566559;--oro:#a8741a;--oro2:#8a5c0e;--rojo:#c23b22;color-scheme:light}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+ background-image:linear-gradient(var(--bg2) 1px,transparent 1px),linear-gradient(90deg,var(--bg2) 1px,transparent 1px);background-size:32px 32px;background-position:-1px -1px}
+.env{max-width:760px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px));padding-block:0 64px}
+header.top{display:flex;align-items:center;gap:14px;padding-block:22px;flex-wrap:wrap}
+header.top a.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg)}
+header.top img{width:48px;height:48px;border-radius:12px;border:2px solid var(--oro);image-rendering:auto;background:#012117}
+.nom{font:900 26px/1 Archivo,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.nom b{color:var(--oro)}
+nav.idioma{margin-left:auto;display:flex;gap:8px;font:600 13px/1 Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+nav.idioma a{color:var(--mut);text-decoration:none;padding:8px 10px;border:1px solid var(--linea);border-radius:6px}
+nav.idioma a[aria-current]{color:#07110d;background:var(--oro);border-color:var(--oro)}
+h1{font:900 clamp(30px,6.4vw,46px)/1.05 Archivo,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:18px 0 8px;text-wrap:balance}
+h1 span{color:var(--oro)}
+.fecha{font:600 12px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:26px}
+.resumen{background:var(--panel);border:2px solid var(--oro);border-radius:10px;padding:18px 20px;box-shadow:5px 5px 0 var(--linea);margin-bottom:34px}
+.resumen b.t{display:block;font:800 13px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:10px}
+.resumen ul{margin:0;padding-left:20px}.resumen li{margin:5px 0}
+h2{font:800 20px/1.2 Archivo,Impact,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:40px 0 10px;display:flex;gap:10px;align-items:baseline;text-wrap:balance}
+h2 i{font-style:normal;color:var(--oro);font-size:14px;min-width:26px}
+p,li{max-width:68ch}
+li{margin:6px 0}
+a{color:var(--oro2)}
+code{font:600 14px ui-monospace,Menlo,monospace;background:var(--panel);border:1px solid var(--linea);padding:1px 6px;border-radius:5px;overflow-wrap:anywhere}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:10px 0}
+th,td{border:1px solid var(--linea);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--panel);font:700 12px/1.2 Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--oro)}
+.tabla{overflow-x:auto}
+.aviso{border-left:4px solid var(--rojo);background:var(--panel);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+footer{margin-top:56px;padding-top:20px;border-top:2px dashed var(--linea);color:var(--mut);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:var(--mut)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:28px;align-items:center;padding-block:24px 8px}
+.hero img{width:190px;max-width:100%;border-radius:22px;border:3px solid var(--oro);box-shadow:8px 8px 0 var(--linea);background:#012117}
+.hero p.lema{font-size:19px;color:var(--mut);margin:0 0 20px}
+@media(max-width:560px){.hero{grid-template-columns:1fr}.hero img{width:130px;order:-1}}
+.botones{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;font:800 14px/1 Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#07110d;background:var(--oro);padding:14px 18px;border-radius:8px;box-shadow:4px 4px 0 var(--linea)}
+.btn.sec{background:transparent;color:var(--fg);border:2px solid var(--oro);box-shadow:none}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin-top:22px}
+.rejilla div{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:14px 16px}
+.rejilla b{display:block;font:800 14px/1.2 Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--oro);margin-bottom:6px}
+.rejilla span{font-size:15px;color:var(--mut)}
+</style></head><body><div class="env">
+<header class="top"><a class="marca" href="index.html"><img src="boss.png" alt="" width="48" height="48"><span class="nom">Fit<b>Boss</b></span></a>
+<nav class="idioma" aria-label="Language"><a href="privacidad.html" hreflang="es">ES</a><a href="privacy.html" hreflang="en" aria-current="page">EN</a></nav></header>
+<main>
+<h1>Privacy <span>policy</span></h1>
+<div class="fecha">Last updated: November 17, 2026</div>
+<div class="resumen"><b class="t">In short</b><ul>
+<li>FitBoss has <b>no accounts, no servers of its own, no ads and no analytics</b>.</li>
+<li>Your plan, workout logs and measurements are stored <b>only on your device</b>. Jacques Gagelin does not receive or see them.</li>
+<li>The only thing that goes outside is the Pro payment, which is handled by <b>Google Play</b>.</li>
+<li>You can erase everything from Settings or by uninstalling the app.</li></ul></div>
+
+<h2 id="s1"><i>01</i>Who is responsible</h2><p>FitBoss (“the app”) is published by <b>Jacques Gagelin</b>. For any question about this policy write to <a href="mailto:fitbossapp@gmail.com">fitbossapp@gmail.com</a>.</p>
+
+<h2 id="s2"><i>02</i>What the app stores on your device</h2><p>To build your plan and track your progress, the app keeps in your device's private storage what you type or choose:</p>
+<div class="tabla"><table><tr><th>Data</th><th>Purpose</th></tr>
+<tr><td>Name or nickname, age, weight, height</td><td>Calculate your plan and suggested loads.</td></tr>
+<tr><td>Goal, level, available days, equipment</td><td>Choose exercises and organise your week.</td></tr>
+<tr><td>Workout logs (sets, loads, duration, perceived effort, heart rate or calories if you enter them)</td><td>Show your progress and feed the game.</td></tr>
+<tr><td>Body measurements you log</td><td>Progress charts.</td></tr>
+<tr><td>Game progress, points and settings (units, theme)</td><td>Keep your campaign and preferences.</td></tr>
+<tr><td>Whether Pro is active on your Google account</td><td>Unlock paid features.</td></tr></table></div>
+<p>This data <b>never leaves your device</b> through the app: nothing is sent to servers, there is no cloud sync of our own, and Jacques Gagelin has no access to it. Weight, measurements and heart-rate figures are health and wellness data that you choose to enter; the app handles them locally only.</p>
+
+<h2 id="s3"><i>03</i>What we do not do</h2><ul><li>We do not create accounts or ask for an email, phone number or password.</li>
+<li>We use no analytics, trackers, advertising or third-party tracking tools.</li>
+<li>We do not sell, rent or share data, because we do not receive any.</li>
+<li>We do not request camera, microphone, location, contacts, file or health-sensor permissions.</li></ul>
+
+<h2 id="s4"><i>04</i>Purchases and Google Play</h2><p>Pro is billed through <b>Google Play</b> (monthly subscription or one-time purchase). Payment, your payment method and billing details are handled by Google under its own <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a>; FitBoss never sees them. The app only asks Google Play whether your account has an active Pro purchase in order to unlock or lock features. You can cancel the subscription at any time in Google Play → Payments &amp; subscriptions.</p>
+
+<h2 id="s5"><i>05</i>Links to other sites</h2><p>Some exercises include a link to a YouTube video search. Tapping it opens outside the app (in your browser or the YouTube app), where YouTube's and Google's policies apply. FitBoss does not send any information about you with that link.</p>
+
+<h2 id="s6"><i>06</i>Backups and export</h2><p>From Settings you can copy your data as text and restore it on another device; that copy stays wherever you paste it (notes, email, etc.) and is your responsibility. Also, if Android's backup is turned on, the system itself may include the app's data in the backup it keeps on your Google account; that is managed by Android and you can turn it off in your phone's settings.</p>
+
+<h2 id="s7"><i>07</i>Your control and data deletion</h2><p>You are in full control of your data: you can edit it in the app, export it from Settings, and <b>erase everything</b> with the delete option in Settings. Uninstalling the app also removes the local data (except any copy Android may have backed up, as described above). Because FitBoss keeps no data about you outside your device, there is nothing for us to delete on request.</p>
+
+<h2 id="s8"><i>08</i>Children</h2><p>FitBoss is not directed to children under 13 and does not knowingly collect information from them. If you are a parent or guardian and have questions, please contact us.</p>
+
+<h2 id="s9"><i>09</i>Health notice</h2><div class="aviso"><b>FitBoss does not provide medical advice.</b> Plans and suggested loads are guidance only. If you have a health condition, are pregnant, are recovering from an injury or have not trained for a long time, consult a professional before starting. Stop exercising if you feel pain, dizziness or shortness of breath.</div>
+
+<h2 id="s10"><i>10</i>Changes to this policy</h2><p>If the app changes in a way that affects your privacy (for example, if it ever adds accounts or sync), we will update this page, change the date above and tell you inside the app before collecting any new data.</p>
+
+<h2 id="s11"><i>11</i>Contact</h2><p>Jacques Gagelin · <a href="mailto:fitbossapp@gmail.com">fitbossapp@gmail.com</a></p>
+</main>
+<footer><span>© 2026 Jacques Gagelin</span><a href="index.html">Home</a><a href="privacidad.html">Privacidad</a><a href="privacy.html">Privacy</a><a href="mailto:fitbossapp@gmail.com">fitbossapp@gmail.com</a></footer>
+</div></body></html>
