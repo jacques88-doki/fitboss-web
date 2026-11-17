@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FitBoss</title><meta name="description" content="FitBoss: treine com um plano sob medida e derrote chefes de videogame a cada série.">
+<meta name="theme-color" content="#07110d"><link rel="icon" href="favicon.png">
+<meta property="og:title" content="FitBoss"><meta property="og:description" content="FitBoss: treine com um plano sob medida e derrote chefes de videogame a cada série."><meta property="og:image" content="boss.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#07110d;--bg2:#0b1a14;--panel:#0f241b;--linea:#24493a;--fg:#e9efe9;--mut:#a3b5aa;--oro:#e0ac48;--oro2:#f3cd7a;--rojo:#ff5a3c;color-scheme:dark}
+:root[data-tema="claro"]{--bg:#f4efe2;--bg2:#ebe4d2;--panel:#fffaf0;--linea:#cdbf9c;--fg:#17261f;--mut:#566559;--oro:#a8741a;--oro2:#8a5c0e;--rojo:#c23b22;color-scheme:light}
+@media (prefers-color-scheme:light){:root:not([data-tema="oscuro"]){--bg:#f4efe2;--bg2:#ebe4d2;--panel:#fffaf0;--linea:#cdbf9c;--fg:#17261f;--mut:#566559;--oro:#a8741a;--oro2:#8a5c0e;--rojo:#c23b22;color-scheme:light}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+ background-image:linear-gradient(var(--bg2) 1px,transparent 1px),linear-gradient(90deg,var(--bg2) 1px,transparent 1px);background-size:32px 32px;background-position:-1px -1px}
+.env{max-width:760px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px));padding-block:0 64px}
+header.top{display:flex;align-items:center;gap:14px;padding-block:22px;flex-wrap:wrap}
+header.top a.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg)}
+header.top img{width:48px;height:48px;border-radius:12px;border:2px solid var(--oro);image-rendering:auto;background:#012117}
+.nom{font:900 26px/1 Archivo,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.nom b{color:var(--oro)}
+nav.idioma{margin-left:auto;display:flex;gap:8px;font:600 13px/1 Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+nav.idioma a{color:var(--mut);text-decoration:none;padding:8px 10px;border:1px solid var(--linea);border-radius:6px}
+nav.idioma a[aria-current]{color:#07110d;background:var(--oro);border-color:var(--oro)}
+h1{font:900 clamp(30px,6.4vw,46px)/1.05 Archivo,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:18px 0 8px;text-wrap:balance}
+h1 span{color:var(--oro)}
+.fecha{font:600 12px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:26px}
+.resumen{background:var(--panel);border:2px solid var(--oro);border-radius:10px;padding:18px 20px;box-shadow:5px 5px 0 var(--linea);margin-bottom:34px}
+.resumen b.t{display:block;font:800 13px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:10px}
+.resumen ul{margin:0;padding-left:20px}.resumen li{margin:5px 0}
+h2{font:800 20px/1.2 Archivo,Impact,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:40px 0 10px;display:flex;gap:10px;align-items:baseline;text-wrap:balance}
+h2 i{font-style:normal;color:var(--oro);font-size:14px;min-width:26px}
+p,li{max-width:68ch}
+li{margin:6px 0}
+a{color:var(--oro2)}
+code{font:600 14px ui-monospace,Menlo,monospace;background:var(--panel);border:1px solid var(--linea);padding:1px 6px;border-radius:5px;overflow-wrap:anywhere}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:10px 0}
+th,td{border:1px solid var(--linea);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--panel);font:700 12px/1.2 Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--oro)}
+.tabla{overflow-x:auto}
+.aviso{border-left:4px solid var(--rojo);background:var(--panel);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+footer{margin-top:56px;padding-top:20px;border-top:2px dashed var(--linea);color:var(--mut);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:var(--mut)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:28px;align-items:center;padding-block:24px 8px}
+.hero img{width:190px;max-width:100%;border-radius:22px;border:3px solid var(--oro);box-shadow:8px 8px 0 var(--linea);background:#012117}
+.hero p.lema{font-size:19px;color:var(--mut);margin:0 0 20px}
+@media(max-width:560px){.hero{grid-template-columns:1fr}.hero img{width:130px;order:-1}}
+.botones{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;font:800 14px/1 Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#07110d;background:var(--oro);padding:14px 18px;border-radius:8px;box-shadow:4px 4px 0 var(--linea)}
+.btn.sec{background:transparent;color:var(--fg);border:2px solid var(--oro);box-shadow:none}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin-top:22px}
+.rejilla div{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:14px 16px}
+.rejilla b{display:block;font:800 14px/1.2 Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--oro);margin-bottom:6px}
+.rejilla span{font-size:15px;color:var(--mut)}
+</style></head><body><div class="env">
+<header class="top"><a class="marca" href="home-pt.html"><img src="boss.png" alt="" width="48" height="48"><span class="nom">Fit<b>Boss</b></span></a>
+<nav class="idioma" aria-label="Idioma"><a href="index.html" hreflang="es">ES</a><a href="home-en.html" hreflang="en">EN</a><a href="home-pt.html" hreflang="pt" aria-current="page">PT</a></nav></header>
+<main><section class="hero"><div><h1>Treine. <span>Derrote o chefe.</span></h1><p class="lema">Um plano de treino sob medida em que cada série que você faz tira vida de um chefe de videogame. Sem contas, sem anúncios, seus dados só no seu celular.</p>
+<div class="botones"><a class="btn" href="privacidade.html">Política de privacidade</a></div></div>
+<img src="boss.png" alt="Ícone do FitBoss: um chefe de pedra com um halter cravado na cabeça" width="190" height="190"></section><div class="rejilla"><div><b>Plano sob medida</b><span>Escolha seus dias, seu equipamento e seu objetivo. O app monta a semana.</span></div><div><b>Cada série conta</b><span>Seu progresso real causa dano ao chefe: constância transformada em jogo.</span></div><div><b>Seus dados são seus</b><span>Tudo fica no seu dispositivo. Sem conta, sem rastreamento.</span></div><div><b>Grátis para começar</b><span>Plano, registro e a primeira missão são grátis. O Pro libera a campanha completa.</span></div></div></main>
+<footer><span>© 2026 Jacques Gagelin</span><a href="home-pt.html">Início</a><a href="privacidade.html">Privacidade</a><a href="mailto:fitbossapp@gmail.com">fitbossapp@gmail.com</a></footer>
+</div></body></html>
